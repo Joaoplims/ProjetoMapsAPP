@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste mapa</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type = "module" src="./index.js"></script>
+    
+</head>
+<body id="bg">
+    <div id="map"></div> 
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdBUdiJWlxUh9D7ogpqReOo7-6xkH4qNk&callback=initMap&v=weekly"
+    defer
+  ></script>  
+
+  <dialog close id="modalInfo">
+    <h3 id="TituloModal">Nome do lugar </h3>
+    <h5 id="Endereco">Endereco</h5>
+    <img class="red" style="height: 250px; width: 250px;"></img>
+    <ul>
+    </ul>
+    <button id = "clsModal"> Fechar </button>
+  </dialog>
+  <button id = "opnModal" style="margin-right: 400px;">  Abrir Modal</button>
+
+
+</body>
+</html>
